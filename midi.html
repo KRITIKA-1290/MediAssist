@@ -1,18 +1,27 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>MediAssist — Your Digital Health Assistant</title>
-  <meta name="description" content="MediAssist: Book appointments, consult doctors online, manage prescriptions and get trusted medical advice — fast and secure." />
+  <meta name="description"
+    content="MediAssist: Book appointments, consult doctors online, manage prescriptions and get trusted medical advice — fast and secure." />
 
   <!-- Tailwind CDN for quick prototyping -->
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    .hero-bg { background: linear-gradient(180deg, rgba(16,185,129,0.06), rgba(245,249,250,0)); }
-    .glass { background: rgba(255,255,255,0.75); backdrop-filter: blur(6px); }
+    .hero-bg {
+      background: linear-gradient(180deg, rgba(16, 185, 129, 0.06), rgba(245, 249, 250, 0));
+    }
+
+    .glass {
+      background: rgba(255, 255, 255, 0.75);
+      backdrop-filter: blur(6px);
+    }
   </style>
 </head>
+
 <body class="bg-slate-50 text-slate-800 antialiased">
   <!-- Header / Navbar -->
   <header class="backdrop-blur-sm sticky top-0 z-40 bg-white/60 border-b border-gray-100">
@@ -21,8 +30,9 @@
         <a class="flex items-center gap-3" href="#">
           <!-- Logo: medical cross -->
           <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
-            <rect x="3" y="3" width="18" height="18" rx="4" fill="#10B981"/>
-            <path d="M12 7v10M7 12h10" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            <rect x="3" y="3" width="18" height="18" rx="4" fill="#10B981" />
+            <path d="M12 7v10M7 12h10" stroke="white" stroke-width="1.6" stroke-linecap="round"
+              stroke-linejoin="round" />
           </svg>
           <span class="font-semibold text-lg">MediAssist</span>
         </a>
@@ -36,12 +46,17 @@
         </div>
 
         <div class="flex items-center gap-3">
-          <a href="#book" class="px-4 py-2 bg-green-600 text-white rounded-lg shadow-sm hover:bg-green-700 text-sm">Book Appointment</a>
-          <a href="#login" class="px-4 py-2 border border-green-600 text-green-600 rounded-lg hover:bg-green-50 text-sm">Sign in</a>
+          <a href="#book" class="px-4 py-2 bg-green-600 text-white rounded-lg shadow-sm hover:bg-green-700 text-sm">Book
+            Appointment</a>
+          <a href="#login"
+            class="px-4 py-2 border border-green-600 text-green-600 rounded-lg hover:bg-green-50 text-sm">Sign in</a>
 
           <!-- Mobile menu button -->
           <button id="menuBtn" class="md:hidden p-2 rounded-lg focus:outline-none" aria-label="Open menu">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h16" stroke="#374151" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+              <path d="M4 7h16M4 12h16M4 17h16" stroke="#374151" stroke-width="1.6" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
           </button>
         </div>
       </nav>
@@ -65,17 +80,24 @@
       <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         <div>
           <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight">Trusted care, from anywhere.</h1>
-          <p class="mt-4 text-lg text-slate-600 max-w-xl">MediAssist connects you with certified doctors, lets you book same-day appointments, do secure teleconsultations, and manage prescriptions — all in one simple platform.</p>
+          <p class="mt-4 text-lg text-slate-600 max-w-xl">MediAssist connects you with certified doctors, lets you book
+            same-day appointments, do secure teleconsultations, and manage prescriptions — all in one simple platform.
+          </p>
 
           <div class="mt-6 fl
-          <div class="mt-6 flex gap-4">
-            <a href="#book" class="px-6 py-3 bg-green-600 text-white rounded-lg shadow hover:bg-green-700 text-sm font-medium">Book Appointment</a>
-            <a href="#services" class="px-6 py-3 border border-green-600 text-green-600 rounded-lg hover:bg-green-50 text-sm font-medium">Learn More</a>
+          <div class=" mt-6 flex gap-4">
+            <a href="#book"
+              class="px-6 py-3 bg-green-600 text-white rounded-lg shadow hover:bg-green-700 text-sm font-medium">Book
+              Appointment</a>
+            <a href="#services"
+              class="px-6 py-3 border border-green-600 text-green-600 rounded-lg hover:bg-green-50 text-sm font-medium">Learn
+              More</a>
           </div>
         </div>
 
         <div class="flex justify-center">
-          <img src="https://cdn-icons-png.flaticon.com/512/3209/3209265.png" alt="Online doctor consultation" class="w-80 md:w-96 drop-shadow-md" />
+          <img src="https://cdn-icons-png.flaticon.com/512/3209/3209265.png" alt="Online doctor consultation"
+            class="w-80 md:w-96 drop-shadow-md" />
         </div>
       </div>
     </section>
@@ -84,46 +106,55 @@
     <section id="services" class="py-16 bg-white">
       <div class="max-w-7xl mx-auto px-6 text-center">
         <h2 class="text-3xl font-bold mb-4">Our Key Services</h2>
-        <p class="text-slate-600 mb-12 max-w-2xl mx-auto">From AI-driven health insights to seamless appointment booking, MediAssist empowers your healthcare journey every step of the way.</p>
+        <p class="text-slate-600 mb-12 max-w-2xl mx-auto">From AI-driven health insights to seamless appointment
+          booking, MediAssist empowers your healthcare journey every step of the way.</p>
 
         <div class="grid md:grid-cols-3 gap-8">
           <div class="glass p-6 rounded-2xl shadow-sm hover:shadow-md transition">
-            <img src="https://cdn-icons-png.flaticon.com/512/2966/2966489.png" class="w-16 mx-auto mb-4" alt="AI Remedy" />
+            <img src="https://cdn-icons-png.flaticon.com/512/2966/2966489.png" class="w-16 mx-auto mb-4"
+              alt="AI Remedy" />
             <h3 class="font-semibold text-lg mb-2">AI Health Assistant</h3>
-            <p class="text-slate-600 text-sm">Describe your symptoms and get quick AI-based suggestions and remedies before consulting a doctor.</p>
+            <p class="text-slate-600 text-sm">Describe your symptoms and get quick AI-based suggestions and remedies
+              before consulting a doctor.</p>
           </div>
 
           <div class="glass p-6 rounded-2xl shadow-sm hover:shadow-md transition">
-            <img src="https://cdn-icons-png.flaticon.com/512/4320/4320337.png" class="w-16 mx-auto mb-4" alt="Doctor booking" />
+            <img src="https://cdn-icons-png.flaticon.com/512/4320/4320337.png" class="w-16 mx-auto mb-4"
+              alt="Doctor booking" />
             <h3 class="font-semibold text-lg mb-2">Book Appointments</h3>
-            <p class="text-slate-600 text-sm">Find and book appointments with top-rated doctors near you or online within minutes.</p>
+            <p class="text-slate-600 text-sm">Find and book appointments with top-rated doctors near you or online
+              within minutes.</p>
           </div>
 
           <div class="glass p-6 rounded-2xl shadow-sm hover:shadow-md transition">
-            <img src="https://cdn-icons-png.flaticon.com/512/2950/2950671.png" class="w-16 mx-auto mb-4" alt="Prescription management" />
+            <img src="https://cdn-icons-png.flaticon.com/512/2950/2950671.png" class="w-16 mx-auto mb-4"
+              alt="Prescription management" />
             <h3 class="font-semibold text-lg mb-2">Prescription Management</h3>
-            <p class="text-slate-600 text-sm">Store, access, and renew your prescriptions digitally with reminders and history tracking.</p>
+            <p class="text-slate-600 text-sm">Store, access, and renew your prescriptions digitally with reminders and
+              history tracking.</p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Footer -->
-  <footer class="bg-green-700 text-white py-6 text-center">
-    
-  </footer>
+    <footer class="bg-green-700 text-white py-6 text-center">
 
-  <!-- Mobile menu script -->
-  <script>
-    const menuBtn = document.getElementById('menuBtn');
-    const mobileMenu = document.getElementById('mobileMenu');
-    menuBtn.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-    });
-  </script>
+    </footer>
+
+    <!-- Mobile menu script -->
+    <script>
+      const menuBtn = document.getElementById('menuBtn');
+      const mobileMenu = document.getElementById('mobileMenu');
+      menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    </script>
 </body>
+
 </html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -132,6 +163,7 @@
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body class="bg-gray-100 text-gray-800">
 
   <!-- Header -->
@@ -161,7 +193,8 @@
         <p class="text-center text-gray-600">Cardiologist</p>
         <p class="text-center text-sm mt-2">Experience: 10+ Years</p>
         <div class="text-center mt-4">
-          <button onclick="bookDoctor('Dr. Anjali Verma')" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Book Appointment</button>
+          <button onclick="bookDoctor('Dr. Anjali Verma')"
+            class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Book Appointment</button>
         </div>
       </div>
 
@@ -172,7 +205,8 @@
         <p class="text-center text-gray-600">Dermatologist</p>
         <p class="text-center text-sm mt-2">Experience: 8+ Years</p>
         <div class="text-center mt-4">
-          <button onclick="bookDoctor('Dr. Rajesh Kumar')" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Book Appointment</button>
+          <button onclick="bookDoctor('Dr. Rajesh Kumar')"
+            class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Book Appointment</button>
         </div>
       </div>
 
@@ -183,7 +217,8 @@
         <p class="text-center text-gray-600">Pediatrician</p>
         <p class="text-center text-sm mt-2">Experience: 12+ Years</p>
         <div class="text-center mt-4">
-          <button onclick="bookDoctor('Dr. Neha Sharma')" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Book Appointment</button>
+          <button onclick="bookDoctor('Dr. Neha Sharma')"
+            class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Book Appointment</button>
         </div>
       </div>
 
@@ -212,19 +247,22 @@
 
   <!-- Footer -->
   <footer class="bg-blue-600 text-white text-center py-4 mt-10">
-   
+
   </footer>
 </body>
+
 </html>
- 
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>How It Works | Medi Assistant</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body class="bg-gray-50 text-gray-800">
 
   <!-- Header -->
@@ -243,7 +281,8 @@
   <!-- Hero Section -->
   <section class="bg-gradient-to-r from-blue-500 to-blue-700 text-white py-16 text-center">
     <h2 class="text-4xl font-bold mb-4">How Medi Assistant Works</h2>
-    <p class="text-lg max-w-2xl mx-auto">Your health companion that helps you get the right care — faster, easier, and smarter.</p>
+    <p class="text-lg max-w-2xl mx-auto">Your health companion that helps you get the right care — faster, easier, and
+      smarter.</p>
   </section>
 
   <!-- Steps Section -->
@@ -254,21 +293,24 @@
       <div class="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition">
         <div class="text-blue-600 text-5xl mb-4">🩺</div>
         <h3 class="text-xl font-semibold mb-2">1. Enter Your Symptoms</h3>
-        <p>Type your symptoms into our AI-based system. It quickly analyzes your inputs and provides possible causes.</p>
+        <p>Type your symptoms into our AI-based system. It quickly analyzes your inputs and provides possible causes.
+        </p>
       </div>
 
       <!-- Step 2 -->
       <div class="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition">
         <div class="text-blue-600 text-5xl mb-4">🤖</div>
         <h3 class="text-xl font-semibold mb-2">2. Get AI Suggestions</h3>
-        <p>Our intelligent assistant gives instant remedy advice and self-care tips for common issues — safely and confidentially.</p>
+        <p>Our intelligent assistant gives instant remedy advice and self-care tips for common issues — safely and
+          confidentially.</p>
       </div>
 
       <!-- Step 3 -->
       <div class="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition">
         <div class="text-blue-600 text-5xl mb-4">👨‍⚕️</div>
         <h3 class="text-xl font-semibold mb-2">3. Book a Doctor Appointment</h3>
-        <p>Need expert help? Book an appointment with certified doctors directly through our platform — anytime, anywhere.</p>
+        <p>Need expert help? Book an appointment with certified doctors directly through our platform — anytime,
+          anywhere.</p>
       </div>
 
       <!-- Step 4 -->
@@ -285,7 +327,8 @@
     <div class="max-w-4xl mx-auto text-center px-6">
       <h3 class="text-2xl font-bold text-blue-700 mb-4">Safe • Smart • Simple</h3>
       <p class="text-gray-700 text-lg">
-        Medi Assistant combines AI technology with trusted healthcare professionals to give you a complete medical experience.
+        Medi Assistant combines AI technology with trusted healthcare professionals to give you a complete medical
+        experience.
         Whether you need instant advice or a doctor consultation, everything happens in one secure platform.
       </p>
     </div>
@@ -293,32 +336,39 @@
 
   <!-- Footer -->
   <footer class="bg-blue-700 text-white py-6 text-center mt-8">
-     </footer>
+  </footer>
 
 </body>
+
 </html>
 <!-- Contact Section -->
-    <section id="contact" class="py-16 bg-slate-100">
-      <div class="max-w-4xl mx-auto px-6 text-center">
-        <h2 class="text-3xl font-bold mb-4">Contact Us</h2>
-        <p class="text-slate-600 mb-6">Need help or have feedback? We’d love to hear from you.</p>
-        <form class="grid gap-4 max-w-xl mx-auto text-left">
-          <input type="text" placeholder="Your Name" class="border border-slate-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-green-500" required />
-          <input type="email" placeholder="Your Email" class="border border-slate-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-green-500" required />
-          <textarea placeholder="Your Message" rows="4" class="border border-slate-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-green-500"></textarea>
-          <button class="w-full py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 font-medium">Send Message</button>
-        </form>
-      </div>
-    </section>
-  </main>
+<section id="contact" class="py-16 bg-slate-100">
+  <div class="max-w-4xl mx-auto px-6 text-center">
+    <h2 class="text-3xl font-bold mb-4">Contact Us</h2>
+    <p class="text-slate-600 mb-6">Need help or have feedback? We’d love to hear from you.</p>
+    <form class="grid gap-4 max-w-xl mx-auto text-left">
+      <input type="text" placeholder="Your Name"
+        class="border border-slate-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-green-500" required />
+      <input type="email" placeholder="Your Email"
+        class="border border-slate-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-green-500" required />
+      <textarea placeholder="Your Message" rows="4"
+        class="border border-slate-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-green-500"></textarea>
+      <button class="w-full py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 font-medium">Send
+        Message</button>
+    </form>
+  </div>
+</section>
+</main>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About Us | Medi Assistant</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body class="bg-gray-50 text-gray-800">
 
   <!-- Header -->
@@ -346,9 +396,8 @@
   <!-- About Section -->
   <section class="max-w-6xl mx-auto py-16 px-6 grid md:grid-cols-2 gap-10 items-center">
     <div>
-      <img src="https://cdn.pixabay.com/photo/2016/03/09/09/17/doctor-1245887_960_720.jpg" 
-           alt="Medi Assistant" 
-           class="rounded-2xl shadow-lg w-full">
+      <img src="https://cdn.pixabay.com/photo/2016/03/09/09/17/doctor-1245887_960_720.jpg" alt="Medi Assistant"
+        class="rounded-2xl shadow-lg w-full">
     </div>
     <div>
       <h3 class="text-2xl font-bold text-blue-700 mb-4">Who We Are</h3>
@@ -358,7 +407,8 @@
         and easy access to certified doctors — all in one place.
       </p>
       <p class="text-gray-700 leading-relaxed">
-        Our goal is to create a smarter healthcare experience for users by connecting them with the right medical resources,
+        Our goal is to create a smarter healthcare experience for users by connecting them with the right medical
+        resources,
         improving awareness, and helping people make informed health decisions from the comfort of their homes.
       </p>
     </div>
@@ -379,7 +429,7 @@
         <div class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition">
           <h4 class="text-xl font-semibold text-blue-600 mb-3">Our Vision</h4>
           <p>
-            To build a world where every individual has easy, secure, and smart access to healthcare support — 
+            To build a world where every individual has easy, secure, and smart access to healthcare support —
             anytime, anywhere — using technology that truly understands their needs.
           </p>
         </div>
@@ -392,20 +442,20 @@
     <h3 class="text-3xl font-bold text-blue-700 mb-8">Meet Our Team</h3>
     <div class="grid md:grid-cols-3 gap-10">
       <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition">
-        <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"
-             alt="Founder" class="w-32 h-32 rounded-full mx-auto mb-4">
+        <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" alt="Founder"
+          class="w-32 h-32 rounded-full mx-auto mb-4">
         <h4 class="text-xl font-semibold text-blue-600">Dr. Arjun Mehta</h4>
         <p class="text-gray-500">Founder & Chief Medical Officer</p>
       </div>
       <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition">
         <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"
-             alt="Co-Founder" class="w-32 h-32 rounded-full mx-auto mb-4">
+          alt="Co-Founder" class="w-32 h-32 rounded-full mx-auto mb-4">
         <h4 class="text-xl font-semibold text-blue-600">Kritika Srivastava</h4>
         <p class="text-gray-500">Co-Founder & Project Lead</p>
       </div>
       <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition">
         <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"
-             alt="Developer" class="w-32 h-32 rounded-full mx-auto mb-4">
+          alt="Developer" class="w-32 h-32 rounded-full mx-auto mb-4">
         <h4 class="text-xl font-semibold text-blue-600">Rahul Sharma</h4>
         <p class="text-gray-500">Lead Developer</p>
       </div>
@@ -414,23 +464,9 @@
 
   <!-- Footer -->
   <footer class="bg-blue-700 text-white py-6 text-center">
-     <p> 2025 MediAssist | Your Digital Health Partner</p>
+    <p> 2025 MediAssist | Your Digital Health Partner</p>
   </footer>
 
 </body>
+
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
