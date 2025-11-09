@@ -1,0 +1,69 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediAssist - Suggestions</title>
+    <link rel="stylesheet" href="../styles/home.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body class="bg-green-50 text-gray-800 font-sans">
+
+
+    <!-- Main Section -->
+    <main class="p-6">
+        <h1 class="text-3xl font-semibold text-center text-primary mb-8">Suggestions Based on Your Symptoms</h1>
+
+        <!-- Symptom Suggestions -->
+        <section class="space-y-6">
+            <!-- Cough Suggestion -->
+            <div class="suggestion-card bg-white p-6 rounded-lg shadow-lg">
+                <div class="flex items-center space-x-4">
+                    <div class="bg-blue-100 text-blue-600 p-3 rounded-full">
+                        <i class="fas fa-cough fa-lg"></i> <!-- Cough Icon -->
+                    </div>
+                    <h2 class="text-2xl font-semibold">Cough</h2>
+                </div>
+                <p class="mt-4 text-gray-600">If you're experiencing a cough, here are some suggestions:</p>
+                <ul class="list-disc pl-5 mt-2">
+                    <li>Drink warm fluids like herbal teas or hot water with honey.</li>
+                    <li>Gargle with warm salt water to soothe your throat.</li>
+                    <li>Consider using over-the-counter cough medicine for relief.</li>
+                    <li>Rest and stay hydrated to help your body recover.</li>
+                </ul>
+            </div>
+
+            <!-- Fever Suggestion -->
+            <div class="suggestion-card bg-white p-6 rounded-lg shadow-lg">
+                <div class="flex items-center space-x-4">
+                    <div class="bg-red-100 text-red-600 p-3 rounded-full">
+                        <i class="fas fa-thermometer-half fa-lg"></i> <!-- Fever Icon -->
+                    </div>
+                    <h2 class="text-2xl font-semibold">Fever</h2>
+                </div>
+                <p class="mt-4 text-gray-600">For managing a fever, we recommend the following:</p>
+                <ul class="list-disc pl-5 mt-2">
+                    <li>Stay hydrated by drinking water, clear broths, or electrolyte drinks.</li>
+                    <li>Rest in a cool, well-ventilated room and avoid too many blankets.</li>
+                    <li>Take over-the-counter fever-reducing medication like acetaminophen.</li>
+                    <li>If fever persists for more than 48 hours, seek medical attention.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Schedule a Doctor's Appointment Button -->
+        <div class="flex-column content-center justify-center mt-8">
+
+            <p class="mt-4 text-gray-500">Book an appointment with a doctor directly from here for better diagnosis and
+                care.</p>
+            <br>
+            <button onclick="bookAppointment()"
+                class="px-5 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 font-medium">
+                Schedule a Doctor's Appointment <i class="ml-3 fa fa-arrow-right"></i>
+            </button>
+        </div>
+    </main>
+
+    <script src="../../scripts/schedule_appointment/remedy_and_suggestions.js"></script>
+
+</body>
