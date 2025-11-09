@@ -1,0 +1,172 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediAssist - Describe Symptoms</title>
+    <link rel="stylesheet" href="../../styles/home.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body class="bg-green-50 text-gray-800 font-sans">
+
+    <!-- Main Section -->
+    <main class="p-6">
+        <h1 class="text-3xl font-semibold text-center text-primary mb-8">Choose Your Symptoms</h1>
+
+        <!-- Symptom Selection Tiles -->
+        <section class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 mb-6">
+            <!-- Row 1 -->
+            <div
+                class="symptom-tile bg-white p-4 rounded-lg shadow-lg hover:shadow-xl flex justify-center items-center cursor-pointer border-2 border-transparent hover:border-primary transition-all">
+                <div class="flex flex-col items-center text-center">
+                    <span class="text-2xl text-primary">Fever</span>
+                    <input type="checkbox" class="hidden symptom-checkbox" id="fever" data-symptom="Fever">
+                    <span class="check-icon hidden text-white bg-green-500 rounded-full p-2 mt-2">
+                        <i class="fas fa-check"></i>
+                    </span>
+                </div>
+            </div>
+            <div
+                class="symptom-tile bg-white p-4 rounded-lg shadow-lg hover:shadow-xl flex justify-center items-center cursor-pointer border-2 border-transparent hover:border-primary transition-all">
+                <div class="flex flex-col items-center text-center">
+                    <span class="text-2xl text-primary">Cough</span>
+                    <input type="checkbox" class="hidden symptom-checkbox" id="cough" data-symptom="Cough">
+                    <span class="check-icon hidden text-white bg-green-500 rounded-full p-2 mt-2">
+                        <i class="fas fa-check"></i>
+                    </span>
+                </div>
+            </div>
+            <div
+                class="symptom-tile bg-white p-4 rounded-lg shadow-lg hover:shadow-xl flex justify-center items-center cursor-pointer border-2 border-transparent hover:border-primary transition-all">
+                <div class="flex flex-col items-center text-center">
+                    <span class="text-2xl text-primary">Headache</span>
+                    <input type="checkbox" class="hidden symptom-checkbox" id="headache" data-symptom="Headache">
+                    <span class="check-icon hidden text-white bg-green-500 rounded-full p-2 mt-2">
+                        <i class="fas fa-check"></i>
+                    </span>
+                </div>
+            </div>
+            <div
+                class="symptom-tile bg-white p-4 rounded-lg shadow-lg hover:shadow-xl flex justify-center items-center cursor-pointer border-2 border-transparent hover:border-primary transition-all">
+                <div class="flex flex-col items-center text-center">
+                    <span class="text-2xl text-primary">Nausea</span>
+                    <input type="checkbox" class="hidden symptom-checkbox" id="nausea" data-symptom="Nausea">
+                    <span class="check-icon hidden text-white bg-green-500 rounded-full p-2 mt-2">
+                        <i class="fas fa-check"></i>
+                    </span>
+                </div>
+            </div>
+
+            <!-- Row 2 -->
+            <div
+                class="symptom-tile bg-white p-4 rounded-lg shadow-lg hover:shadow-xl flex justify-center items-center cursor-pointer border-2 border-transparent hover:border-primary transition-all">
+                <div class="flex flex-col items-center text-center">
+                    <span class="text-2xl text-primary">Fatigue</span>
+                    <input type="checkbox" class="hidden symptom-checkbox" id="fatigue" data-symptom="Fatigue">
+                    <span class="check-icon hidden text-white bg-green-500 rounded-full p-2 mt-2">
+                        <i class="fas fa-check"></i>
+                    </span>
+                </div>
+            </div>
+            <div
+                class="symptom-tile bg-white p-4 rounded-lg shadow-lg hover:shadow-xl flex justify-center items-center cursor-pointer border-2 border-transparent hover:border-primary transition-all">
+                <div class="flex flex-col items-center text-center">
+                    <span class="text-2xl text-primary">Sore Throat</span>
+                    <input type="checkbox" class="hidden symptom-checkbox" id="soreThroat" data-symptom="Sore Throat">
+                    <span class="check-icon hidden text-white bg-green-500 rounded-full p-2 mt-2">
+                        <i class="fas fa-check"></i>
+                    </span>
+                </div>
+            </div>
+            <div
+                class="symptom-tile bg-white p-4 rounded-lg shadow-lg hover:shadow-xl flex justify-center items-center cursor-pointer border-2 border-transparent hover:border-primary transition-all">
+                <div class="flex flex-col items-center text-center">
+                    <span class="text-2xl text-primary">Body Aches</span>
+                    <input type="checkbox" class="hidden symptom-checkbox" id="bodyAches" data-symptom="Body Aches">
+                    <span class="check-icon hidden text-white bg-green-500 rounded-full p-2 mt-2">
+                        <i class="fas fa-check"></i>
+                    </span>
+                </div>
+            </div>
+            <div
+                class="symptom-tile bg-white p-4 rounded-lg shadow-lg hover:shadow-xl flex justify-center items-center cursor-pointer border-2 border-transparent hover:border-primary transition-all">
+                <div class="flex flex-col items-center text-center">
+                    <span class="text-2xl text-primary">Chills</span>
+                    <input type="checkbox" class="hidden symptom-checkbox" id="chills" data-symptom="Chills">
+                    <span class="check-icon hidden text-white bg-green-500 rounded-full p-2 mt-2">
+                        <i class="fas fa-check"></i>
+                    </span>
+                </div>
+            </div>
+
+            <!-- Row 3 -->
+            <div
+                class="symptom-tile bg-white p-4 rounded-lg shadow-lg hover:shadow-xl flex justify-center items-center cursor-pointer border-2 border-transparent hover:border-primary transition-all">
+                <div class="flex flex-col items-center text-center">
+                    <span class="text-2xl text-primary">Shortness of Breath</span>
+                    <input type="checkbox" class="hidden symptom-checkbox" id="shortnessOfBreath"
+                        data-symptom="Shortness of Breath">
+                    <span class="check-icon hidden text-white bg-green-500 rounded-full p-2 mt-2">
+                        <i class="fas fa-check"></i>
+                    </span>
+                </div>
+            </div>
+            <div
+                class="symptom-tile bg-white p-4 rounded-lg shadow-lg hover:shadow-xl flex justify-center items-center cursor-pointer border-2 border-transparent hover:border-primary transition-all">
+                <div class="flex flex-col items-center text-center">
+                    <span class="text-2xl text-primary">Chest Pain</span>
+                    <input type="checkbox" class="hidden symptom-checkbox" id="chestPain" data-symptom="Chest Pain">
+                    <span class="check-icon hidden text-white bg-green-500 rounded-full p-2 mt-2">
+                        <i class="fas fa-check"></i>
+                    </span>
+                </div>
+            </div>
+            <div
+                class="symptom-tile bg-white p-4 rounded-lg shadow-lg hover:shadow-xl flex justify-center items-center cursor-pointer border-2 border-transparent hover:border-primary transition-all">
+                <div class="flex flex-col items-center text-center">
+                    <span class="text-2xl text-primary">Dizziness</span>
+                    <input type="checkbox" class="hidden symptom-checkbox" id="dizziness" data-symptom="Dizziness">
+                    <span class="check-icon hidden text-white bg-green-500 rounded-full p-2 mt-2">
+                        <i class="fas fa-check"></i>
+                    </span>
+                </div>
+            </div>
+            <div
+                class="symptom-tile bg-white p-4 rounded-lg shadow-lg hover:shadow-xl flex justify-center items-center cursor-pointer border-2 border-transparent hover:border-primary transition-all">
+                <div class="flex flex-col items-center text-center">
+                    <span class="text-2xl text-primary">Stomach Ache</span>
+                    <input type="checkbox" class="hidden symptom-checkbox" id="stomachAche" data-symptom="Stomach Ache">
+                    <span class="check-icon hidden text-white bg-green-500 rounded-full p-2 mt-2">
+                        <i class="fas fa-check"></i>
+                    </span>
+                </div>
+            </div>
+            <div
+                class="symptom-tile bg-white p-4 rounded-lg shadow-lg hover:shadow-xl flex justify-center items-center cursor-pointer border-2 border-transparent hover:border-primary transition-all">
+                <div class="flex flex-col items-center text-center">
+                    <span class="text-2xl text-primary">Skin Rash</span>
+                    <input type="checkbox" class="hidden symptom-checkbox" id="skinRash" data-symptom="Skin Rash">
+                    <span class="check-icon hidden text-white bg-green-500 rounded-full p-2 mt-2">
+                        <i class="fas fa-check"></i>
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Text Area for Additional Details -->
+        <div class="mb-6 mt-20">
+            <textarea id="details" rows="4"
+                class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+                placeholder="Please provide any additional details about your symptoms..."></textarea>
+        </div>
+
+        <!-- Next Button -->
+        <div class="flex justify-center">
+            <button id="nextButton" class="px-5 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 font-medium">
+                Next
+            </button>
+        </div>
+    </main>
+    <script src="../../scripts/schedule_appointment/describe_illness.js"></script>
+
+</body>
