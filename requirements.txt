@@ -1,0 +1,6 @@
+flask
+flask-mail
+flask-cors
+flask-sqlalchemy
+pymysql
+cryptography

@@ -26,14 +26,21 @@
                 <img src="../../static/doctor2.jpg" alt="Dr. Jane Smith"
                     class="w-full h-32 object-cover rounded-t-lg mb-4">
                 <h3 class="text-xl font-semibold text-gray-800">Dr. Jane Smith</h3>
-                <p class="text-gray-500">Gen. Physician</p>
+                <p class="text-gray-500">Gynecologyst</p>
             </div>
             <div class="doctor-card bg-white shadow-lg rounded-lg text-center cursor-pointer hover:shadow-xl transition"
                 onclick="showDoctorDetails(3)">
                 <img src="../../static/doctor3.jpg" alt="Dr. Emily Davis"
                     class="w-full h-32 object-cover rounded-t-lg mb-4">
                 <h3 class="text-xl font-semibold text-gray-800">Dr. Emily Davis</h3>
-                <p class="text-gray-500">Gen. Physician</p>
+                <p class="text-gray-500">Orthopedic</p>
+            </div>
+            <div class="doctor-card bg-white shadow-lg rounded-lg text-center cursor-pointer hover:shadow-xl transition"
+                onclick="showDoctorDetails(4)">
+                <img src="../../static/doctor3.jpg" alt="Dr.David"
+                    class="w-full h-32 object-cover rounded-t-lg mb-4">
+                <h3 class="text-xl font-semibold text-gray-800"><Dr class="David"></Dr></h3>
+                <p class="text-gray-500">Attending Doctor</p>
             </div>
         </div>
 
@@ -42,6 +49,12 @@
             <h2 id="doctor-name" class="text-2xl font-semibold text-gray-800"></h2>
             <p id="doctor-specialty" class="text-gray-600 mb-4"></p>
             <p id="doctor-bio" class="text-gray-500 mb-6"></p>
+            
+            <!-- Location Input -->
+            <label for="appointment-date" class="block text-lg text-gray-700 mb-2">Appointment date: </label>
+            <input type="date" id="appointment-date" class="w-full border border-gray-300 rounded-lg p-3 mb-4"
+                value="Nazreth Hospital, Prayagraj, 211002">
+
 
             <!-- Time Selection -->
             <label for="appointment-time" class="block text-lg text-gray-700 mb-2">Select a Time:</label>
@@ -52,8 +65,7 @@
                 <option value="12:00 PM">12:00 PM</option>
                 <option value="1:00 PM">1:00 PM</option>
             </select>
-
-            <!-- Location Input -->
+              <!-- Location Input -->
             <label for="user-location" class="block text-lg text-gray-700 mb-2">Visit Location:</label>
             <input type="text" id="user-location" class="w-full border border-gray-300 rounded-lg p-3 mb-4"
                 value="Nazreth Hospital, Prayagraj, 211002" disabled>

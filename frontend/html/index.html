@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../styles/index.css">
     <!-- Tailwind CDN for quick prototyping -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="../scripts/index-page-script.js"></script>
+    <script src="../scripts/index-page-script.js?v=2"></script>
 </head>
 
 <body class="bg-slate-50 text-slate-800 antialiased">
@@ -48,9 +48,8 @@
                     <a href="#book" onclick="loadPage('schedule_appointment/describe_illness.html')"
                         class="px-4 py-2 bg-green-600 text-white rounded-lg shadow-sm hover:bg-green-700 text-sm">Book
                         Appointment</a>
-                    <a href="sign_in.html"
-                        class="px-4 py-2 border border-green-600 text-green-600 rounded-lg hover:bg-green-50 text-sm">Sign
-                        in</a>
+                    <a href="sign_in.html" id="auth-link"
+                        class="px-4 py-2 border border-green-600 text-green-600 rounded-lg hover:bg-green-50 text-sm">Loading...</a>
                 </div>
             </nav>
         </div>
@@ -59,6 +58,13 @@
     <main>
         <iframe id="content-frame" class="iframe-viewport" src="home.html"></iframe>
     </main>
+
+    <footer class="bg-blue-700 text-white mt-6 py-6 text-center">
+        <p> 2025 MediAssist | Your Digital Health Partner</p>
+    </footer>
+
+
+
 </body>
 
 </html>
